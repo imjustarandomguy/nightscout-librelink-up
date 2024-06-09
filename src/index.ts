@@ -104,7 +104,7 @@ if (config.singleShot)
 }
 else
 {
-    const schedule = `*/${config.linkUpTimeInterval} * * * *`;
+    const schedule = `*/${config.linkUpTimeInterval} * * * * *`;
     logger.info("Starting cron schedule: " + schedule)
     cron.schedule(schedule, () =>
     {
