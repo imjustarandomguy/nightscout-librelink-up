@@ -1,9 +1,10 @@
 name: Docker CI
 
 on:
-  workflow_dispatch:
   push:
-  pull_request:
+    branches:
+      - main
+      - 'releases/**'
 
 jobs:
   main:
